@@ -1,0 +1,27 @@
+"Store"
+{
+	"Arms Skins"
+	{
+		"Terrorists"
+		{
+			"<model name>"
+			{
+				"arms" "<arms route file>"
+				"team" "2"
+				"price" "120"
+				"type" "armsskin"
+			}
+		}
+		
+		"Counter-Terrorists"
+		{
+			"<model name>"
+			{
+				"arms" "<arms route file>"
+				"team" "3"
+				"price" "120"
+				"type" "armsskin"
+			}
+		}
+	}
+}
