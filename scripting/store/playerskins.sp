@@ -251,13 +251,6 @@ Store_SetClientModel(client, const String:model[], const skin=0, const String:ar
 	}
 }
 
-public Action:PlayerSkins_PlayerDeath(Handle:event,const String:name[],bool:dontBroadcast)
-{
-	new client = GetClientOfUserId(GetEventInt(event, "userid"));
-	g_iTempSkins[client] = -1;
-	return Plugin_Continue;
-}
-
 bool ClientHaveArms(client)
 {
 	new m_iEquipped = Store_GetEquippedItem(client, "armsskin", 2);
@@ -267,4 +260,11 @@ bool ClientHaveArms(client)
 	if(m_iEquipped >= 0) return true;
 
 	return false;
+}
+
+public Action:PlayerSkins_PlayerDeath(Handle:event,const String:name[],bool:dontBroadcast)
+{
+	new client = GetClientOfUserId(GetEventInt(event, "userid"));
+	g_iTempSkins[client] = -1;
+	return Plugin_Continue;
 }

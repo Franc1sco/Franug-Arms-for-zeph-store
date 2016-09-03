@@ -146,6 +146,7 @@ new SilentChatTrigger = 0;
 #if !defined STANDALONE_BUILD
 #include "store/hats.sp"
 #include "store/tracers.sp"
+#include "store/armsskins.sp"
 #include "store/playerskins.sp"
 #include "store/trails.sp"
 #include "store/grenskins.sp"
@@ -295,6 +296,7 @@ public OnPluginStart()
 	Hats_OnPluginStart();
 	Tracers_OnPluginStart();
 	Trails_OnPluginStart();
+	ArmsSkins_OnPluginStart();
 	PlayerSkins_OnPluginStart();
 	GrenadeSkins_OnPluginStart();
 	GrenadeTrails_OnPluginStart();
